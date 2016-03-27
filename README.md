@@ -12,7 +12,9 @@
 * [Usage](#usage)
 * [Test](#test)
 * [License](#license)
-### npm package
+
+## Install
+
 ```bash
 npm install otp-generator --save
 ```
