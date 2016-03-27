@@ -1,0 +1,6 @@
+tsd.json
+.gitignore
+.gitattributes
+node_modules/
+typings/
+.travis.yml
