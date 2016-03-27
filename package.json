@@ -1,0 +1,34 @@
+{
+  "name": "otp-generator",
+  "version": "0.0.1",
+  "description": "One time password generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maheshkumar-Kakade/otp-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maheshkumar-Kakade/otp-generator/issues"
+  },
+  "homepage": "https://github.com/Maheshkumar-Kakade/otp-generator#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Maheshkumar-Kakade/otp-generator/LICENSE"
+    }
+  ],
+  "keywords": [
+    "OTP",
+    "password-generator",
+    "password"
+  ],
+  "author": "Maheshkumar Kakade <maheshkumarkakade@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
+  }
+}
