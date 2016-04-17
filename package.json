@@ -1,6 +1,6 @@
 {
   "name": "otp-generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "One time password generator",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,8 @@
   "keywords": [
     "OTP",
     "password-generator",
-    "password"
+    "password",
+    "generator"
   ],
   "author": "Maheshkumar Kakade <maheshkumarkakade@gmail.com>",
   "license": "MIT",

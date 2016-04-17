@@ -4,3 +4,5 @@ tsd.json
 node_modules/
 typings/
 .travis.yml
+.vscode/
+jsconfig.json
