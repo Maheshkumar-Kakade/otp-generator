@@ -5,7 +5,6 @@ var digits = '0123456789'
 var alphabets = 'abcdefghijklmnopqrstuvwxyz'
 var upperCase = alphabets.toUpperCase()
 var specialChars = '#!&@'
-var defaultOptions = { digits: true, alphabets: true, upperCase: true, specialChars: true }
 
 function rand (min, max) {
   var random = Math.random()
@@ -24,11 +23,13 @@ module.exports = {
    */
   generate: function (length, options) {
     length = length || 10
-    var generateOptions = Object.create(defaultOptions)
-    generateOptions.digits = options.digits
-    generateOptions.alphabets = options.alphabets
-    generateOptions.upperCase = options.upperCase
-    generateOptions.specialChars = options.specialChars
+    var generateOptions = options || {}
+
+    generateOptions.digits = generateOptions.hasOwnProperty('digits') ? options.digits : true
+    generateOptions.alphabets = generateOptions.hasOwnProperty('alphabets') ? options.alphabets : true
+    generateOptions.upperCase = generateOptions.hasOwnProperty('upperCase') ? options.upperCase : true
+    generateOptions.specialChars = generateOptions.hasOwnProperty('specialChars') ? options.specialChars : true
+
     var allowsChars = ((generateOptions.digits || '') && digits) +
       ((generateOptions.alphabets || '') && alphabets) +
       ((generateOptions.upperCase || '') && upperCase) +

@@ -26,15 +26,15 @@ npm install otp-generator --save
 ```js
 var otpGenerator = require('otp-generator')
 
-otpGenerator.generate(6, { digits: true, alphabets: true, upperCase: false, specialChars: false });
+otpGenerator.generate(6, { upperCase: false, specialChars: false });
 
 ```
 ### generate(length, options)
 
 **Arguments**
 
-* `length` - length of password.
-* `options` 
+* `length` - length of password. Optional if `options` is optional. default length is 10.
+* `options` - optional
   - `digits` - Default: `true` true value includes digits in OTP 
   - `alphabets` - Default: `true` true value includes alphabets in OTP
   - `upperCase` - Default: `true` true value includes uppercase alphabets in OTP
