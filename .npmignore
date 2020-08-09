@@ -6,3 +6,5 @@ typings/
 .travis.yml
 .vscode/
 jsconfig.json
+coverage/
+test/
