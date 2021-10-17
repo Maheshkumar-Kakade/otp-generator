@@ -1,8 +1,11 @@
 {
   "name": "otp-generator",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "One time password generator",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.10.0"
+  },
   "scripts": {
     "test": "standard && istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
     "cov": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"

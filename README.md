@@ -24,7 +24,7 @@ npm install otp-generator --save
 ## Usage
 
 ```js
-var otpGenerator = require('otp-generator')
+const otpGenerator = require('otp-generator')
 
 otpGenerator.generate(6, { upperCase: false, specialChars: false });
 

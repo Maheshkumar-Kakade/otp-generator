@@ -1,15 +1,12 @@
 /**
  * Generate password from allowed word
  */
+const crypto = require('crypto')
+
 const digits = '0123456789'
 const alphabets = 'abcdefghijklmnopqrstuvwxyz'
 const upperCase = alphabets.toUpperCase()
 const specialChars = '#!&@'
-
-function rand (min, max) {
-  const random = Math.random()
-  return Math.floor(random * (max - min) + min)
-}
 
 module.exports = {
   /**
@@ -36,7 +33,7 @@ module.exports = {
       ((generateOptions.specialChars || '') && specialChars)
     let password = ''
     while (password.length < length) {
-      const charIndex = rand(0, allowsChars.length - 1)
+      const charIndex = crypto.randomInt(0, allowsChars.length)
       password += allowsChars[charIndex]
     }
     return password
