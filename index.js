@@ -31,12 +31,8 @@ module.exports = {
       ((generateOptions.lowerCaseAlphabets || '') && lowerCaseAlphabets) +
       ((generateOptions.upperCaseAlphabets || '') && upperCaseAlphabets) +
       ((generateOptions.specialChars || '') && specialChars)
-    let password = ''
-    while (password.length < length) {
-      const charIndex = crypto.randomInt(0, allowsChars.length)
-      password += allowsChars[charIndex]
-    }
-    return password
+
+    return [...Array(length).keys()].map(_ => allowsChars[crypto.randomInt(0, allowsChars.length)]).join('')
   }
 
 }
