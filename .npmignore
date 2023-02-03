@@ -8,3 +8,4 @@ typings/
 jsconfig.json
 coverage/
 test/
+.nyc_output/

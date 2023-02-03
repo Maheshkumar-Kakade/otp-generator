@@ -80,3 +80,4 @@ $RECYCLE.BIN/
 
 #.vscode
 .vscode/
+.nyc_output

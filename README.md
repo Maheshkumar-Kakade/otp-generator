@@ -4,6 +4,7 @@
 
 [![Build Status][travis-ci-img]][travis-ci-url] 
 [![npm version][npm-version-img]][npm-version-url]
+![npm](https://img.shields.io/npm/dm/otp-generator?style=plastic)
 [![Test Coverage][coveralls-image]][coveralls-url]
 [![js-standard-style][js-standard-style-img]][js-standard-style-url] 
 

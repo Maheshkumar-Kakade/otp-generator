@@ -34,6 +34,9 @@ module.exports = {
     let password = ''
     while (password.length < length) {
       const charIndex = crypto.randomInt(0, allowsChars.length)
+      if (password.length === 0 && generateOptions.digits === true && allowsChars[charIndex] === '0') {
+        continue
+      }
       password += allowsChars[charIndex]
     }
     return password
