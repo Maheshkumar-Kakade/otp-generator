@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm test
-    - run: npm run coverage
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2
 
