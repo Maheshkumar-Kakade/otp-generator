@@ -1,4 +1,4 @@
-#otp-generator
+# otp-generator
 
 > 'otp-generator' is simple one time password generator and can be used as password generator.
 
